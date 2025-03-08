@@ -151,13 +151,15 @@ li {
 .project a {
     text-decoration: none;
     color: #1E1E2E;
-    padding-bottom: 16px;
+    margin: 1rem;
+    padding: 8px;
     text-align: center;
     text-transform: uppercase;
+    border: 1px solid #1E1E2E;
 
 }
 
-.project-info a:hover {
+.project a:hover {
     color: #2ECC71;
 }
 
@@ -173,12 +175,16 @@ li {
     max-width: 100%;
     min-height: auto;
     padding: 2rem;
+}
 
+.skills-title {
+    text-align: center;
+    padding-top: 2rem;
+    color: #1E1E2E;
 }
 
 .tech-icons {
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -190,7 +196,7 @@ li {
 }
 
 .tech-icons img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /* End Skills Section */
@@ -345,9 +351,16 @@ footer nav a:hover {
     /* End Projects */
 
     /* Skills Section */
+    .tech-icons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
     .tech-icons img {
         width: 40px;
         height: 40px;
         transition: transform 0.3s ease;
     }
+
 }
