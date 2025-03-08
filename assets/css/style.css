@@ -26,7 +26,7 @@ header {
     gap: 10px;
     padding: 20px;
     position: fixed;
-    top: 0;
+    top: -1px;
     left: 0;
     right: 0;
 }
@@ -77,7 +77,7 @@ li {
 .pProfile {
     border-radius: 50%;
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 200px;
 }
 
 .pPresentation {
@@ -117,24 +117,24 @@ li {
 
 .projects-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     display: flex;
+    justify-content: center;
     max-width: 60%;
     margin: 1rem auto;
 }
 
 .project {
-    max-width: 400px;
-    aspect-ratio: 9/16;
+    max-width: 300px;
+    max-height: auto;
     background-color: #F8F9FA;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .project img {
-    width: 100%;
     max-height: 50%;
     object-fit: contain;
     padding: 5px;
@@ -144,7 +144,6 @@ li {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -169,8 +168,10 @@ li {
 .skills {
     background-color: #F8F9FA;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     max-width: 100%;
     min-height: auto;
@@ -179,7 +180,7 @@ li {
 
 .skills-title {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     color: #1E1E2E;
 }
 
@@ -324,21 +325,14 @@ footer nav a:hover {
         gap: 1rem;
     }
 
-    .about .right {
-        text-align: right;
-        max-width: 90%;
-        margin: 0 auto;
-        line-height: 1.4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     /* End About Section */
 
     /* Projects Section */
     .projects-container {
         display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 2rem;
         display: flex;
@@ -347,14 +341,31 @@ footer nav a:hover {
     }
 
     .project {
-        aspect-ratio: 9/12;
+        display: flex;
+        flex-direction: column;
     }
 
     /* End Projects */
 
     /* Skills Section */
+    .skills {
+        background-color: #F8F9FA;
+        display: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 100%;
+        min-height: auto;
+        padding: 2rem;
+    }
+
     .tech-icons {
+
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 1rem;
         flex-wrap: wrap;
     }
@@ -371,4 +382,28 @@ footer nav a:hover {
         margin-top: -1px;
     }
 
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+
+    /* Styles spécifiques pour iPad en portrait */
+    .skills {
+        max-width: 100%;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    .tech-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .tech-icons img {
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s ease;
+    }
 }
