@@ -10,12 +10,142 @@
 </head>
 
 <body>
-    <header>Nom + menu de navigation</header>
-    <section class="about" id="about">Présentation rapide</section>
-    <section class="projects" id="projects">Liste des projets avec images & liens</section>
-    <section class="skills" id="skills">Icônes des technologies maîtrisées</section>
-    <section class="contact" id="contact">Formulaire ou liens LinkedIn/GitHub</section>
-    <footer>Copyright + réseaux sociaux</footer>
+    <!-- Nom + menu de navigation -->
+    <header>
+        <div class="logo">Youssef Larbi</div>
+        <nov class="navLinks">
+            <ul class="links">
+                <li class="link"><a class="linkAncre" href="#about">About</a></li>
+                <li class="link"><a class="linkAncre" href="#projects">Projects</a></li>
+                <li class="link"><a class="linkAncre" href="#skills">Skills</a></li>
+                <li class="link"><a class="linkAncre" href="#contact">Contact</a></li>
+            </ul>
+        </nov>
+    </header>
+
+    <!-- Sections -->
+    <section class="about" id="about">
+        <div class="left">
+            <h2>Présentation</h2>
+            <p>
+                Salut, je suis <strong>Youssef</strong>, <br>
+                un <strong>développeur web</strong> passionné <br>
+                par la création de solutions <br>
+                modernes et efficaces.
+            </p>
+            <p>Ce que je <strong>maitrise</strong> ?</p>
+
+            <ul>
+                <li><strong>JavaScript</strong></li>
+                <li><strong>Node.js</strong></li>
+                <li><strong>HTML</strong></li>
+                <li><strong>CSS</strong></li>
+                <li><strong>React.js</strong></li>
+                <li><strong>MongoDB</strong></li>
+            </ul>
+        </div>
+        <div class="right">
+            <p>
+                En tant que <strong>full-stack Dev</strong>. <br>
+                Mon objectif est de créer des <strong>applications web interactives</strong> et des sites optimisés qui
+                apportent de la
+                valeur aux utilisateurs. <br>
+                J'adore <strong>résoudre des problèmes</strong> complexes et <strong>travailler en équipe</strong> pour
+                faire avancer les
+                projets.
+            </p>
+            <p>
+                <strong>En dehors du code</strong>, je suis aussi intéressé par la <strong>musique</strong>, les
+                <strong>technologies émergentes</strong>, et
+                j'aime découvrir de nouveaux domaines pour <strong>enrichir mes compétences.</strong>
+            </p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="assets/images/pngegg.png" alt="Projet 1" class="project-img">
+                <div class="project-info">
+                    <h3>WebAPI</h3>
+                    <p>
+                        Ce projet a été réalisé avec <Strong>JavaScript</Strong>, <Strong>Node.js</Strong>,
+                        <strong>MongoDB</strong>, et
+                        <strong> Express JS</strong>. Il permet la gestion de stock des produits.
+                    </p>
+                </div>
+                <a target="_blank" href="https://github.com/YuzKeys/gestion-stock" class="btn">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Skills -->
+    <section class="skills" id="skills">
+        <div class="tech-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                title="HTML5">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                title="CSS3">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript" title="JavaScript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+                title="Node.js">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+                title="MongoDB">
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+                title="GitHub"> -->
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <h2>Contactez-moi</h2>
+
+        <div class="contact-container">
+            <!-- Formulaire de contact -->
+            <form action="mailto:ton.email@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <!-- Liens vers GitHub & LinkedIn -->
+            <div class="social-links">
+                <a href="https://github.com/YuzKeys/" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/youssef-larbi-178582101/" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Youssef Larbi. Tous droits réservés.</p>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+
+
+
+        <p>“Développeur passionné 😍, toujours en quête de nouveaux défis ! 🚀”</p>
+    </footer>
 </body>
 
 </html>
